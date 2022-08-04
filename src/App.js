@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import "./App.css";
 import Header from "./Components/Header";
 import MainDisplay from "./Components/MainDisplay";
