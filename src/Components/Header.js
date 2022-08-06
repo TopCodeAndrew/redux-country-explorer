@@ -6,7 +6,6 @@ import {
     deletePotentialCountries,
     setPotentialCountries,
 } from "../redux/slices/potentialCountriesSlice";
-
 const Header = () => {
     const [input, setInput] = useState();
     let dispatch = useDispatch();
