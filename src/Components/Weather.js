@@ -1,15 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { selectDisplay } from "../redux/slices/displayCountrySlice";
-import { setLoadingFalse, setLoadingTrue } from "../redux/slices/loadingSlice";
 
 const Weather = () => {
-    let display = useSelector(selectDisplay);
-    const dispatch = useDispatch();
-    let latitude = display.capitalInfo.latlng[0];
-    let longitude = display.capitalInfo.latlng[1];
-
     const [weather, setWeather] = useState();
 
     // ------------------------------------
