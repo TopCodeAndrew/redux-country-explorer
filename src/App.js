@@ -9,12 +9,12 @@ import { selectDisplay } from "./redux/slices/displayCountrySlice";
 function App() {
     let potentials = useSelector(selectPotentials);
     console.log(potentials);
-    let display = useSelector(selectDisplay);
-    console.log("DISPLAY", display);
+    let currentDisplay = useSelector(selectDisplay);
+    console.log("DISPLAY", currentDisplay);
     return (
         <div className="App font-link">
             <Header />
-            <OptionDisplay />
+            {currentDisplay ? <MainDisplay /> : <OptionDisplay />}
         </div>
     );
 }
